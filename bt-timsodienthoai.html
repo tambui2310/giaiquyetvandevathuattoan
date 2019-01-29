@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sodienthoai = ["0966853798" , "0799999999", "0399999999", "0844444444"];
+		function kiemTraSDT() {
+			regexp = /^[0-9]{10}$/;
+			for (var i = 0; i < sodienthoai.length ; i++) {
+				if (regexp.test(sodienthoai[i])) {
+					if (sodienthoai[i].substr(0,3) === "096" || sodienthoai[i].substr(0,3) === "079") {
+					document.write(sodienthoai[i] + " là số viettel" + "<br>" );
+					}
+				}
+				
+			}
+
+		}
+		kiemTraSDT();
+
+	</script>
+
+</body>
+</html>
